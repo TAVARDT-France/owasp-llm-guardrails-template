@@ -78,7 +78,7 @@ if not is_valid:
 Pour les entreprises nécessitant un accompagnement en sécurité de l'IA, le blindage d'agents autonomes ou la conformité à l'AI Act :
 
 * **Portail Entreprise :** [TAVARDT France](https://ag.tavardt.com/fr/super-intelligence/)
-* **Contact et Échange Technique :** [Prendre Rendez-vous avec l'Ingénierie](https://ag.tavardt.com/fr/contact/)
+* **Contact et Échange Technique :** [Contacter l'Équipe d'Ingénierie](https://ag.tavardt.com/fr/contact/)
 
 ---
 
