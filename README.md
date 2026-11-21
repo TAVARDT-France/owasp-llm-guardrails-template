@@ -7,7 +7,7 @@
 
 Blueprint déclaratif et middleware open source pour la mitigation de l'injection de prompt (OWASP LLM01), de la fuite de system prompt et des attaques contradictoires sur les agents d'IA, conforme au RGPD et à l'AI Act européen.
 
-Développé et maintenu par l'équipe d'ingénierie en intelligence artificielle et cybersécurité de **[TAVARDT France](https://ag.tavardt.com/fr/super-intelligence/)**.
+Développé et maintenu par l'équipe d'ingénierie en intelligence artificielle de **[TAVARDT France](https://ag.tavardt.com/fr/super-intelligence/)**.
 
 ---
 
@@ -42,7 +42,7 @@ Avant de déployer des agents conversationnels en production, évaluez leur nive
 
 ## 4. Installation et Guide d'Intégration Rapide
 
-### Clone & Execução
+### Clonage & Exécution
 
 ```bash
 git clone https://github.com/TAVARDT-France/owasp-llm-guardrails-template.git
@@ -50,25 +50,25 @@ cd owasp-llm-guardrails-template
 python examples/quickstart.py
 ```
 
-### Exemplo de Integração
+### Exemple d'Intégration en Python
 
 ```python
 from guardrails.validator import LLMGuardrail
 
 guard = LLMGuardrail()
 
-# 1. Validação de Ingress (Input Guardrail)
+# 1. Validation en Entrée (Input Guardrail)
 is_safe, error = guard.validate_input(user_input)
 if not is_safe:
-    raise ValueError(f"Blocked input: {error}")
+    raise ValueError(f"Entrée bloquée suite à un motif contradictoire suspect: {error}")
 
-# 2. Injeção de Canary no Prompt de Sistema
+# 2. Injection du Jeton Canari dans le Prompt Système
 hardened_system_prompt = guard.get_canary_injection_prompt(system_prompt)
 
-# 3. Validação de Egress (Output Guardrail)
+# 3. Validation en Sortie (Output Guardrail)
 is_valid, leak_error = guard.validate_output(completion)
 if not is_valid:
-    raise SecurityError("System prompt leak detected!")
+    raise SecurityError("Alerte critique : Fuite du prompt système détectée via le jeton canari !")
 ```
 
 ---
@@ -84,5 +84,5 @@ Pour les entreprises nécessitant un accompagnement en sécurité de l'IA, le bl
 
 ## Licence
 
-Distribuído sob a licença de código aberto MIT. Consulte o arquivo [`LICENSE`](LICENSE) para mais detalhes.  
+Distribué sous licence open-source MIT. Consultez le fichier [`LICENSE`](LICENSE) pour plus d'informations.  
 Copyright (c) 2026 TAVARDT France.
