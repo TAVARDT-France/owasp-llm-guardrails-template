@@ -7,9 +7,9 @@
 
 Blueprint déclaratif et middleware open source pour la mitigation de l'injection de prompt (OWASP LLM01), de la fuite de system prompt et des attaques contradictoires sur les agents d'IA, conforme au RGPD et à l'AI Act européen.
 
-Développé et maintenu par l'équipe d'ingénierie en intelligence artificielle de **[TAVARDT France](https://ag.tavardt.com/fr/super-intelligence/)**.
+Développé et maintenu par l'équipe d'ingénierie en intelligence artificielle de **TAVARDT France**.
 
----
+***
 
 ## 1. Vue d'Ensemble de la Sécurité pour l'IA et les LLMs
 
@@ -18,27 +18,27 @@ Ce dépôt fournit une bibliothèque modulaire et légère pour déployer des **
 ### La Nécessité des Garde-Fous Applicatifs
 Les grands modèles de langage traitent indifféremment les consignes système et les données soumises par l'utilisateur. Sans validation stricte en entrée et en sortie, les applications d'IA s'exposent au détournement d'instructions (jailbreak), à l'exfiltration de données confidentielles et aux violations de conformité.
 
----
+***
 
 ## 2. Vecteurs de Menace Neutralisés (OWASP Top 10 for LLMs)
 
 | Couche de Défense | Menace Neutralisée | Mécanisme de Protection |
-| :--- | :--- | :--- |
+| :- | :- | :- |
 | **Input Sanitizer** | Injection Directe de Prompt (Jailbreak) | Détection heuristique des motifs de contournement (`ignore les instructions précédentes`, balises XML falsifiées). |
 | **Canary Token Verifier** | Fuite du Prompt Système | Surveillance de jetons canaris inviolables dans la sortie pour bloquer l'exfiltration des règles internes. |
 | **RAG Boundary Guard** | Injection Indirecte de Prompt | Confinement et isolation sémantique des documents tiers injectés dans la base vectorielle. |
 | **Structured Output Filter** | Exécution d'Actions Non Autorisées | Validation rigoureuse des schémas JSON avant l'appel d'APIs ou de connecteurs d'outils MCP. |
 
----
+***
 
 ## 3. Audit et Diagnostic Préalable de Robustesse du Modèle
 
 Avant de déployer des agents conversationnels en production, évaluez leur niveau de résistance aux attaques avec l'outil de diagnostic TAVARDT :
 
-* **Audit de Robustesse IA :** [Évaluateur de Robustesse de LLMs TAVARDT France](https://tools.tavardt.com/fr/evaluateur-robustesse-llm/)
-* **Catalogue des Outils de Diagnostic :** [TAVARDT Tools France](https://tools.tavardt.com/fr/)
+* **Audit de Robustesse IA :** Évaluateur de Robustesse de LLMs TAVARDT France
+* **Catalogue des Outils de Diagnostic :** **TAVARDT Tools France**
 
----
+***
 
 ## 4. Installation et Guide d'Intégration Rapide
 
@@ -71,16 +71,16 @@ if not is_valid:
     raise SecurityError("Alerte critique : Fuite du prompt système détectée via le jeton canari !")
 ```
 
----
+***
 
 ## 5. Conseil Stratégique en Sécurité de l'IA & Agents Autonomes
 
 Pour les entreprises nécessitant un accompagnement en sécurité de l'IA, le blindage d'agents autonomes ou la conformité à l'AI Act :
 
-* **Portail Entreprise :** [TAVARDT France](https://ag.tavardt.com/fr/super-intelligence/)
+* **Portail Entreprise :** **TAVARDT France**
 * **Contact et Échange Technique :** [Contacter l'Équipe d'Ingénierie](https://ag.tavardt.com/fr/contact/)
 
----
+***
 
 ## Licence
 
