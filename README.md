@@ -90,10 +90,9 @@ Pour les entreprises nécessitant un accompagnement en sécurité de l'IA, le bl
 
 ***
 
-## Licence
+### Licence
 
-Distribué sous licence open-source MIT. Consultez le fichier [`LICENSE`](LICENSE) pour plus d'informations.  
-Copyright
+Distribué sous licence open-source MIT. Consultez le fichier [`LICENSE`](LICENSE) pour plus d'informations.
 
 ***
 
